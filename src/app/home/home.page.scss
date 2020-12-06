@@ -1,0 +1,33 @@
+ion-header {
+  ion-toolbar {
+    --background: rgb(212, 231, 212);
+    ion-title {
+      font-family: "Lobster Two", cursive;
+      text-align: center;
+    }
+  }
+}
+
+ion-content {
+  --background: rgb(251, 231, 213);
+  .inside-ion-content {
+    margin: auto;
+    height: 100%;
+    width: 90%;
+    background-image: url(../../assets/donuts.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+  }
+}
+
+ion-footer {
+  ion-toolbar {
+    --background: rgb(212, 231, 212);
+    // --ion-color-base: transparent !important;
+    ion-button {
+      font-family: "Staatliches";
+    }
+  }
+}

@@ -1,0 +1,15 @@
+ion-title {
+  font-family: "Lobster Two", cursive;
+  text-align: center;
+}
+
+ion-toolbar {
+  --background: rgb(212, 231, 212);
+}
+
+.list-md {
+  background: var(
+    --ion-item-background,
+    var(--ion-background-color, rgb(251, 231, 213))
+  );
+}

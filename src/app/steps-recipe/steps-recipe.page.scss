@@ -1,0 +1,14 @@
+ion-title {
+  font-family: "Lobster Two", cursive;
+}
+ion-content {
+  ion-button,
+  h1,
+  h2 {
+    font-family: "Staatliches", cursive;
+  }
+}
+
+ion-toolbar {
+  --background: rgb(212, 231, 212);
+}

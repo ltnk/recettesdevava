@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button [routerLink]="['/recipes', loadedRecipe.id]"
+        ><ion-icon name="play-back-circle"></ion-icon
+      ></ion-button>
+    </ion-buttons>
+    <ion-title>{{ loadedRecipe.title }}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col class="ion-text-center">
+        <h2>Les étapes de la recette</h2>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <ion-list>
+          <ion-item *ngFor="let step of loadedRecipe.steps">
+            {{ step }}</ion-item
+          >
+        </ion-list>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col class="ion-text-center">
+        <ion-button color="danger" [routerLink]="['/recipes', loadedRecipe.id]"
+          >Retour aux ingrédients</ion-button
+        >
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

@@ -1,0 +1,42 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button><ion-icon name="heart"></ion-icon></ion-button>
+    </ion-buttons>
+    <ion-title>Les recettes de Vava</ion-title>
+    <ion-buttons slot="end">
+      <ion-button [routerLink]="['/credits']"
+        ><ion-icon name="information-circle-outline"></ion-icon
+      ></ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <!--   <ion-button
+    color="warning"
+    (click)="onClick('sugar')"
+    [routerLink]="['/recipes-filtered', 'sugar']"
+    >Sucrées</ion-button
+  > -->
+  <!--   <ion-row>
+    <ion-col class="ion-text-center ion-margin">
+      <ion-button
+        color="warning"
+        (click)="onClick('all')"
+        [routerLink]="['/recipes']"
+        >Voir toutes les recettes</ion-button
+      >
+    </ion-col>
+  </ion-row> -->
+
+  <div class="inside-ion-content"></div>
+</ion-content>
+
+<ion-footer class="ion-text-center">
+  <ion-toolbar>
+    <ion-button color="danger" [routerLink]="['/recipes']"
+      >Voir toutes les recettes</ion-button
+    >
+  </ion-toolbar>
+</ion-footer>

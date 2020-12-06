@@ -1,0 +1,7 @@
+{
+  "name": "RecettesVava",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

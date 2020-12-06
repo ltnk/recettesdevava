@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button [routerLink]="['/home']"
+        ><ion-icon name="play-back-circle"></ion-icon
+      ></ion-button>
+    </ion-buttons>
+
+    <ion-title>Les Recettes de Vava</ion-title>
+    <ion-buttons slot="primary">
+      <ion-button [routerLink]="['/credits']"
+        ><ion-icon name="information-circle-outline"></ion-icon
+      ></ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <app-recipe-item
+      *ngFor="let recipe of recipes"
+      [recipeItem]="recipe"
+    ></app-recipe-item>
+  </ion-list>
+</ion-content>
